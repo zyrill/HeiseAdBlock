@@ -9,7 +9,7 @@
 // @description Remove Golem Ads
 // @grant       none
 // @run-at      document-idle
-// @version     1.0
+// @version     1.0.1
 // ==/UserScript==
 
 document.getElementById("container_content").style.top="0px";
