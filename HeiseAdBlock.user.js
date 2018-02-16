@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Heise Adblocker
+// @name        Heise Anti-Adblocker-Blocker
 // @namespace   https://github.com/zyrill/HeiseAdBlock
 // @description Adjusts design of Heise when using Adblock Plus
 // @author      zyrill
