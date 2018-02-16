@@ -9,6 +9,7 @@
 // @description Remove some leftover ads that the adblocker doesn't catch
 // @grant       none
 // @run-at      document-idle
+// @license     MIT
 // @version     1.1.1
 // ==/UserScript==
 
