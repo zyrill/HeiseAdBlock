@@ -12,7 +12,7 @@
 // @grant       none
 // @run-at      document-idle
 // @license     MIT
-// @version     1.1.1
+// @version     1.1.2
 // ==/UserScript==
 
 document.getElementById("container_content").style.top="0px";
