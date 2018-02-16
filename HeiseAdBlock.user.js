@@ -14,3 +14,19 @@
 
 document.getElementById("container_content").style.top="0px";
 document.getElementById("mitte_links").style.width="100%";
+
+var target = document.getElementById("mitte");
+var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        if (mutation.addedNodes !== null) {
+            for (var i = 0; i < mutation.addedNodes.length; i++) {
+                mutation.addedNodes[i].remove();
+            }
+        }
+    });
+});
+
+var config = { attributes: true, childList: true, characterData: true };
+if (target !== null && typeof target === 'object') {
+    observer.observe(target, config);
+}
