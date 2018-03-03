@@ -7,7 +7,6 @@
 // @include     http://www.heise.de/*
 // @updateURL   https://openuserjs.org/meta/zyrill/Heise_Adblocker.meta.js
 // @copyright   2017, zyrill (https://openuserjs.org/users/zyrill)
-// @encoding    utf-8
 // @description Remove some leftover ads that the adblocker doesn't catch
 // @grant       none
 // @run-at      document-idle
