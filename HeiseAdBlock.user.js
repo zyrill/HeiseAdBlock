@@ -1,17 +1,17 @@
 // ==UserScript==
-// @name        Heise Anti-Adblocker-Blocker
-// @namespace   https://github.com/zyrill/HeiseAdBlock
-// @description Adjusts design of Heise when using Adblock Plus
 // @author      zyrill
+// @copyright   2017, zyrill (https://openuserjs.org/users/zyrill)
+// @description Adjust design of Heise when using Adblock Plus and remove some leftover ads that the adblocker doesn't catch
+// @encoding    utf-8
+// @grant       none
 // @include     https://www.heise.de/*
 // @include     http://www.heise.de/*
-// @updateURL   https://openuserjs.org/meta/zyrill/Heise_Adblocker.meta.js
-// @copyright   2017, zyrill (https://openuserjs.org/users/zyrill)
-// @description Remove some leftover ads that the adblocker doesn't catch
-// @grant       none
-// @run-at      document-idle
 // @license     MIT
-// @version     1.1.2
+// @name        Heise Anti-Adblocker-Blocker
+// @namespace   https://github.com/zyrill/HeiseAdBlock
+// @run-at      document-end
+// @updateURL   https://openuserjs.org/meta/zyrill/Heise_Adblocker.meta.js
+// @version     1.1.4
 // ==/UserScript==
 
 document.getElementById("container_content").style.top="0px";
@@ -32,3 +32,5 @@ var config = { attributes: true, childList: true, characterData: true };
 if (target !== null && typeof target === 'object') {
     observer.observe(target, config);
 }
+
+//observer.disconnect();
